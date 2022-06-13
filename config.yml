@@ -1,8 +1,8 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://quentinguenther.github.io/qguenther-blog/'
 languageCode: 'en-us'
-title: 'My New Hugo Site'
-theme: 'PaperMod'
+title: 'Quentin Guenther'
 
+theme: 'PaperMod'
 params:
   profileMode:
     enabled: true
