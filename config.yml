@@ -1,0 +1,52 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'My New Hugo Site'
+theme: 'PaperMod'
+
+params:
+  profileMode:
+    enabled: true
+    title: 'Hello World!' # optional default will be site title
+    subtitle: 'This is subtitle'
+    imageUrl: 'qguenther-profile-picture.jpeg' # optional
+    imageTitle: '<title of image as alt>' # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Archives
+        url: '/archives'
+      - name: Tags
+        url: '/tags'
+
+  socialIcons: # optional
+    - name: 'Twitter'
+      url: '<link>'
+    - name: 'Reddit'
+      url: '<link2>'
+    - name: 'LinkedIn'
+      url: '<link2>'
+    - name: 'Github'
+      url: '<link2>'
+  
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+
+menu:
+  main:
+    - identifier: archives
+      name: archives
+      url: /archives/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
