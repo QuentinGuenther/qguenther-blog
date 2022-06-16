@@ -3,7 +3,26 @@ languageCode: 'en-us'
 title: 'Quentin Guenther'
 
 theme: 'PaperMod'
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
 params:
+  env: production
+  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Theme PaperMod
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
   profileMode:
     enabled: true
     title: 'Hello World!' # optional default will be site title
@@ -14,19 +33,19 @@ params:
     imageHeight: 120 # custom size
     buttons:
       - name: Archives
-        url: '/archives'
+        url: 'archives'
       - name: Tags
-        url: '/tags'
+        url: 'tags'
 
   socialIcons: # optional
     - name: 'Twitter'
       url: '<link>'
-    - name: 'Reddit'
-      url: '<link2>'
     - name: 'LinkedIn'
       url: '<link2>'
     - name: 'Github'
       url: '<link2>'
+    - name: RsS
+      url: "index.xml"
   
   ShowShareButtons: true
   ShowReadingTime: true
@@ -44,9 +63,37 @@ menu:
       name: tags
       url: /tags/
       weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 30
 
 outputs:
     home:
         - HTML
         - RSS
         - JSON # is necessary
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
